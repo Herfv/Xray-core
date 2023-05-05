@@ -14,5 +14,5 @@ jobs:
         with:
           github_token: ${{ secrets.OBCRL_TOKEN }}
           owner: XTLS
-          base: dev-smux
+          base: Herfv-patch-1
           head: main
