@@ -186,6 +186,7 @@ jobs:
       - name: Build Xray
         run: |
           mkdir -p build_assets
+          go mod tidy
           go build -v -o build_assets/xray -trimpath -ldflags "-s -w -buildid=" ./main
 
       - name: Build background Xray on Windows 
